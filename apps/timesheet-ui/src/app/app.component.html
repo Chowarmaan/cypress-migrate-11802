@@ -1,0 +1,22 @@
+<sweda-ts-header
+	(HeaderMenuButtonEvent)="ToggleSideBarVisibility()"
+	[AppTitle]="ApplicationTitle"
+	[AlertCount]="Alerts"
+></sweda-ts-header>
+<mat-drawer-container class="full-height" data-testid="sidebar-menu">
+	<mat-drawer
+		#drawer
+		class="full-height"
+		mode="side"
+		[opened]="SideBarIsOpen"
+	>
+		<sweda-ts-sidebar [AppTitle]="ApplicationTitle"></sweda-ts-sidebar>
+	</mat-drawer>
+	<mat-drawer-content>
+		<router-outlet></router-outlet>
+	</mat-drawer-content>
+</mat-drawer-container>
+<sweda-ts-footer
+	[CopyrightText]="Copyright()"
+	[VersionText]="Version()"
+></sweda-ts-footer>

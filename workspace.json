@@ -1,0 +1,8 @@
+{
+	"$schema": "./node_modules/nx/schemas/workspace-schema.json",
+	"version": 2,
+	"projects": {
+		"timesheet-ui": "apps/timesheet-ui",
+		"timesheet-ui-e2e": "apps/timesheet-ui-e2e"
+	}
+}

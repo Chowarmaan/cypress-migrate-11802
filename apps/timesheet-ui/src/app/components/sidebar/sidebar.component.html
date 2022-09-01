@@ -1,0 +1,60 @@
+<mat-nav-list data-testid="sidebar-menu-nav-list">
+	<div class="profile-card">
+		<div class="profile-card-name" data-testid="sidebar-application-title">
+			{{ AppTitle }}
+		</div>
+	</div>
+
+	<mat-divider></mat-divider>
+	<h2 matSubheader data-testid="sidebar-subheader-1">Pages</h2>
+	<!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/"><mat-icon>home</mat-icon>Home</a> -->
+	<a
+		mat-list-item
+		routerLinkActive="list-item-active"
+		routerLink="/timesheetentry"
+		data-testid="sidebar-route-time-sheet-entry"
+		><mat-icon>create</mat-icon>Time Sheet Entry</a
+	>
+	<a
+		mat-list-item
+		routerLinkActive="list-item-active"
+		routerLink="/"
+		data-testid="sidebar-route-upload-time-sheet"
+		><mat-icon>cloud_upload</mat-icon>Upload Time Sheet</a
+	>
+
+	<h2 matSubheader data-testid="sidebar-subheader-2">View Time Sheet Data</h2>
+	<a
+		mat-list-item
+		routerLinkActive="list-item-active"
+		routerLink="/view"
+		data-testid="sidebar-route-view-by-date"
+		><mat-icon>date_range</mat-icon>By Date(s)</a
+	>
+	<!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/view"><mat-icon>event</mat-icon>By Date(s)</a> -->
+	<a
+		mat-list-item
+		routerLinkActive="list-item-active"
+		routerLink="/view"
+		data-testid="sidebar-route-view-by-mantis"
+		><mat-icon>assignment</mat-icon>By Mantis</a
+	>
+	<!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/view"><mat-icon>work</mat-icon>By Mantis</a> -->
+	<a
+		mat-list-item
+		routerLinkActive="list-item-active"
+		routerLink="/view"
+		data-testid="sidebar-route-view-by-user"
+		><mat-icon>people</mat-icon>By Resource(s)</a
+	>
+
+	<h2 matSubheader data-testid="sidebar-subheader-3">Administration</h2>
+	<a
+		mat-list-item
+		routerLinkActive="list-item-active"
+		routerLink="/alerts"
+		data-testid="sidebar-route-admin-alerts"
+		><mat-icon>notification_important</mat-icon>Alerts</a
+	>
+	<mat-divider></mat-divider>
+</mat-nav-list>

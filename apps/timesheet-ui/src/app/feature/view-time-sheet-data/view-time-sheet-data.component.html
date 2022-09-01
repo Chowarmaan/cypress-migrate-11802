@@ -1,0 +1,9 @@
+<ul>
+	  <li *ngFor="let entry of TimeSheetEntries" data-testid="time-sheet-entry-list">
+	<div>
+	  <div>{{ entry.EntryDate }}</div>
+	  <div>{{ GetCode(entry) }}: {{ entry.Hours }} Hours</div>
+	  <div>{{ entry.Description }}</div>
+	</div>
+  </li>
+</ul>
